@@ -1,0 +1,22 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+RewriteRule ^home$ media.php?module=home [L]
+RewriteRule ^berita-(.*)-(.*)\.html$ media.php?module=detailberita&id=$1 [L]
+RewriteRule ^semua-berita\.html$ media.php?module=semuaberita&id=$1 [L]
+
+RewriteRule ^prosedur\.html$ media.php?module=prosedur&id=$1 [L]
+RewriteRule ^daf-sementara\.html$ media.php?module=daf-sementara&id=$1 [L]
+RewriteRule ^un-pmdk\.html$ media.php?module=un-pmdk&id=$1 [L]
+
+RewriteRule ^registrasi\.html$ media.php?module=registrasi&id=$1 [L]
+RewriteRule ^registrasidua\.html$ media.php?module=registrasidua&id=$1 [L]
+RewriteRule ^registrasifinal\.html$ media.php?module=registrasifinal&id=$1 [L]
+
+RewriteRule ^kontak\.html$ media.php?module=kontak [L]
+RewriteRule ^kontak-aksi\.html$ media.php?module=kontakaksi [L]
+
+RewriteRule ^data-pendaftar\.html$ media.php?module=datapendaftar [L]
+RewriteRule ^haldaftar-(.*)\.html$ media.php?module=datapendaftar&haldaftar=$1 [L]
+
+</IfModule>
